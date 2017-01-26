@@ -12,11 +12,4 @@ require 'foot.php';
 error_reporting(0);
 
 $_FILES["file"]["name"] = str_ireplace('.php', '', $_FILES["file"]["name"]);
-if ($_FILES["file"]["error"] > 0)
-{
-    echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
-}
-else
-{
-    echoinfo($_FILES);
-}
+echoinfo($_FILES);

@@ -97,8 +97,7 @@
 </body>
 </html>
 <?php
-    function echoinfo($file)
-    {
+    function echoinfo($file){
         if ($_FILES["file"]["error"] > 0) {
             echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
         } else {

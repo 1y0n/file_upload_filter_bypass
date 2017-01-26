@@ -17,12 +17,7 @@ function getextension($filename){
 }
 
 if (getextension($_FILES['file']['name']) != 'php'){
-    if ($_FILES["file"]["error"] > 0)
-    {
-        echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
-    }else{
         echoinfo($_FILES);
-    }
-}else{
+    }else{
     echo "Not Allowed";
 }
