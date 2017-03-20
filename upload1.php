@@ -8,9 +8,10 @@
 require 'base.php';?>
 
 <h2 align="center" class="title">UP-1</h2>
-<p class="warn">WARNING: Don't forbid JavaScript in this page!</p>
+<p id="warn" class="warn">WARNING: Don't forbid JavaScript in this page!</p>
 
 <script type='text/javascript'>
+    document.getElementById("warn").style.display = 'none';
     function checkfile(ths){
         if (ths.value == "") {
             alert("Choose a picture first!");
